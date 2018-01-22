@@ -203,17 +203,23 @@ a.article, a.article:hover {
 margin-bottom: -3px;
 
 }
-#main-con img{
+#about img{
 width: 200px;
 height: 200px;
 border-radius: 50%;
 margin-bottom: 3%;
 }
-#contact{
+#con{
   padding-top: 20px;
 }
 
+#mission{
+  display: none;
+}
 
+#contact{
+display: none;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

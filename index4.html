@@ -23,21 +23,21 @@
                 <ul class="list-unstyled components">
 
                     <li>
-                        <a href="#">
+                        <a href="#link_about">
                             <i class="glyphicon glyphicon-question-sign"></i>
                             About
                         </a>
                     </li>
                     <hr>
                     <li>
-                        <a href="#">
+                        <a href="#link_mission">
                             <i class="glyphicon glyphicon-heart-empty"></i>
                             Our Mission
                         </a>
                     </li>
                     <hr>
                     <li>
-                        <a href="#">
+                        <a href="#link_contact">
                             <i class="glyphicon glyphicon-send"></i>
                             Contact
                         </a>
@@ -53,7 +53,7 @@
                       <i class="glyphicon glyphicon-menu-right"></i>
                   </button>
               </div>
-              <div id="main-con">
+              <div id="about">
               <h1>About Us</h1>
               <p class="intro">We are Concinnity, young startup made of two friends, full of ideas and hungry for success.</p>
               <div class="row">
@@ -81,12 +81,69 @@
                 We are still going to college, but our needs for developing our creativity are not fulfilled there.<br><br>
                 Sooo.. we have came up with the idea of ​​building our own company and doing what we love every day. The rest is history :) </p>
             </div>
+            <div id="mission">
+              <h1>Our Mission</h1>
+              <p>From the very beginning of our existence we insist on making quality, functional and well-organized pages for all our clients.
+              All projects we make are in line with Internet standards, using modern technology and world trends.</p><br>
+              <h4>You want a website but you don't know where to start?</h4>
+              <h4>&nbsp;&nbsp;-Don't worry, this is how it's done:</h4><br>
+              <ol>
+                <li>
+                  <h5>Defining</h5>
+                  <p>Every quality cooperation begins with a meeting between us and the client.
+                    At the meeting with the client, we negotiate the design and functionality of the website, and after the meeting we immediately go to work!!
+                  </p>
+                </li>
+                <li>
+                  <h5>Web Design</h5>
+                  <p>After we receive basic design guidelines (your logo, several photos, colors etc.), we are going to design a few examples.
+                    We work on the design to the final confirmation from your side. Only after your confirmation will we move to the next step...
+                  </p>
+                </li>
+                <li>
+                  <h5>Creating a website</h5>
+                  <p>
+                    At this stage, we are going to create a website. Also this is a stage where communication is key, as there are always some ideas
+                    or suggestions on both sides. At the end of this phase we discuss about domain name and hosting of your page.
+                  </p>
+                </li>
+                <li>
+                  <h5>Testing</h5>
+                  <p>
+                    We put the complete page on the test link to help our client review the content and functionality of the site and correct any possible mistakes.
+                  </p>
+                </li>
+                <li>
+                  <h5>Finish</h5>
+                  <p>
+                    We put the finished website on the domain and the server...Congratulations, you are now connected to the whole world :)
+                  </p>
+                </li>
+              </ol>
+
+            </div>
+            <div id="contact">
+              <h1>Contact</h1>
+              <p class="intro">Feel free to contact us, we'll be glad to help!</p>
+                <div class="row">
+                    <div class="col-md-12" id="con">
+                        <h3>E-mail</h3>
+                        <p>info@con-cinnity.com</p>
+                        <h3>Telephone</h3>
+                        <p>+385953956272 or +385989817673</p>
+                        <h3>Location</h3>
+                        <p>We are stationed in Zagreb, Croatia.<br> Currently working from home, but don't be suprised if you see us working in local caffe bars.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
             <div>
                 <button type="button" id="scrollUp" class="btn">
                     <i class="glyphicon glyphicon-menu-up"></i>
                 </button>
             </div>
           </div>
+        </div>
 
         <!-- jQuery CDN -->
          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -101,6 +158,24 @@
                  $('#scrollUp').on('click', function (event) {
                    $("html, body").animate({ scrollTop: 0 }, 500);
                    return false;
+                  });
+                  $('a[href*="#link"]').on('click', function() {
+                    if($(this).is('a[href$="about"]'))
+                    {
+                      $("#about").show( "slow" );
+                      $("#mission").hide();
+                      $("#contact").hide();
+                    }
+                    else if ($(this).is('a[href$="mission"]')) {
+                      $("#about").hide();
+                      $("#mission").show( "slow" );
+                      $("#contact").hide();
+                    }
+                    else if ($(this).is('a[href$="contact"]')){
+                      $("#about").hide();
+                      $("#mission").hide();
+                      $("#contact").show( "slow" );
+                    }
                   });
              });
          </script>
