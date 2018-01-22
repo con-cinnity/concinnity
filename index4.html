@@ -162,19 +162,19 @@
                   $('a[href*="#link"]').on('click', function() {
                     if($(this).is('a[href$="about"]'))
                     {
-                      $("#about").show( "slow" );
+                      $("#about").show(1500);
                       $("#mission").hide();
                       $("#contact").hide();
                     }
                     else if ($(this).is('a[href$="mission"]')) {
                       $("#about").hide();
-                      $("#mission").show( "slow" );
+                      $("#mission").show(1500);
                       $("#contact").hide();
                     }
                     else if ($(this).is('a[href$="contact"]')){
                       $("#about").hide();
                       $("#mission").hide();
-                      $("#contact").show( "slow" );
+                      $("#contact").show(1500);
                     }
                   });
              });
