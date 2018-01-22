@@ -106,7 +106,7 @@ i, span {
 }
 #sidebar ul li a:hover {
     color: #1a1a1a;
-    background: #fff;
+    background: #fafafa;
 }
 #sidebar ul li a i {
     margin-right: 10px;
@@ -186,20 +186,32 @@ a.article, a.article:hover {
     min-height: 100vh;
     transition: all 0.3s;
 }
-button {
-
+#scrollUp {
+  display: none;
 }
-
+.card{
+  padding:10px;
+  background-color: #fff;
+  margin:10px 0px;
+}
 .intro{
   font-size: 2rem;
+  color: #5c5c5c;
+  margin-bottom: 4%;
 }
+#content h1{
+margin-bottom: -3px;
 
+}
 #main-con img{
 width: 200px;
 height: 200px;
 border-radius: 50%;
+margin-bottom: 3%;
 }
-
+#contact{
+  padding-top: 20px;
+}
 
 
 /* ---------------------------------------------------
@@ -256,5 +268,8 @@ border-radius: 50%;
     }
     #sidebarCollapse span {
         display: none;
+    }
+    #scrollUp {
+      display:block;
     }
 }
