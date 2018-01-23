@@ -270,8 +270,18 @@ margin-bottom: 3%;
 }
 #mission{
   display: none;
+  padding-left: 1%;
+}
+#mission ul {
+  list-style-type: none;
 }
 
+#mission span {
+  font-size: 3rem;
+}
+#portfollio{
+  text-align: right;
+}
 #contact{
 display: none;
 }
