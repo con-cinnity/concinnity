@@ -290,6 +290,12 @@ display: none;
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
+
+  .content img{
+    height: 40%;
+    width: 40%;
+    margin-top: 20px;
+  }
     #sidebar {
         min-width: 80px;
         max-width: 80px;
