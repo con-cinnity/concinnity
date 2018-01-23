@@ -11,7 +11,13 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     </head>
     <body>
-
+      <div id="welcome" class="landing">
+        <div class="content">
+        <img src="img/landing_logo.png" alt="landing logo">
+        <p>Having a website should be easy for everyone</p>
+        <button type="button" id="landingButton" class="landing_btn">LET'S START</button>
+      </div>
+    </div>
         <div class="wrapper">
             <!-- Sidebar -->
             <nav id="sidebar">
@@ -144,6 +150,7 @@
             </div>
           </div>
         </div>
+      </div>
 
         <!-- jQuery CDN -->
          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -176,6 +183,11 @@
                       $("#mission").hide();
                       $("#contact").show(1500);
                     }
+                  });
+                  $('#landingButton').on('click', function () {
+                      $('#welcome').slideUp(900);
+                      $('.wrapper').css('display', 'flex');
+                      $("#about").show(1500);
                   });
              });
          </script>

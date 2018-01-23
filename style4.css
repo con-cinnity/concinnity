@@ -1,8 +1,11 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
+html{
+   height: 100%;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    height: 100%;
 }
 
 
@@ -12,7 +15,7 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-.btn {
+.btn, .landing_btn{
     box-shadow: none;
     outline: none !important;
     border: none;
@@ -22,12 +25,62 @@ a, a:hover, a:focus {
 i, span {
     display: inline-block;
 }
+/* ---------------------------------------------------
+    LANDING PAGE
+----------------------------------------------------- */
+.landing{
+  background: url("img/landing.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .landing .content{
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content img{
+    height: 400px;
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .content p{
+    margin-top: 50px;
+    color: #fdf57a;
+    font-size: 2.2rem;
+  }
+
+.landing_btn{
+width:200px;
+background-color: rgba(253,245,122, 0.3);
+border-radius: 5px;
+color: rgba(253,245,122, 1);
+padding: 5px 0;
+margin-top: 30px;
+font-size: 1.9rem;
+}
+
+
+
+
+
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 .wrapper {
-    display: flex;
+    display: none;
     align-items: stretch;
 }
 
@@ -212,7 +265,9 @@ margin-bottom: 3%;
 #con{
   padding-top: 20px;
 }
-
+#about{
+  display: none;
+}
 #mission{
   display: none;
 }
@@ -220,6 +275,7 @@ margin-bottom: 3%;
 #contact{
 display: none;
 }
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
